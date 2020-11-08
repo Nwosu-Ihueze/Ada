@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-pop: 'Poppins', sans-serif;
+    --font-sans: 'Source Sans Pro', sans-serif;
+    --color-red: #DC143C;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #dc143c;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #dc143c;
+}
+
+.sidenav .closebtn:hover {
+    color: #ffffff;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.home {
+    background: linear-gradient(180deg, rgba(51, 51, 51, 0.19)47.44%, rgba(0, 0, 0, 0.63)100%), url('../images/pexels-andrea-piacquadio-3762372\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.lead__txt {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 70%;
+    font-family: var(--font-pop);
+    font-size: 58px;
+    line-height: 65.8px;
+    font-style: normal;
+    font-weight: 500;
+    left: 0;
+}
+
+.envato-care,
+.kratos,
+.chef,
+.sonixlocale {
+    margin-bottom: 5%;
+}
+
+.works {
+    margin-top: 7rem;
+}
+
+.works img {
+    border-radius: 10px;
+}
+
+.work-header {
+    font-family: var(--font-pop);
+    font-size: 33px;
+    line-height: 39.2px;
+    font-weight: 500;
+    color: #1d1c24;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.work-description {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #52575c;
+}
+
+.works button {
+    background: var(--color-red);
+    border: var(--color-red);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.works button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.social-icons {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a {
+    color: #a0a4a8;
+}
+
+.social-icons a:hover {
+    color: #DC143C;
+}
+
+.ion-margin {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.copyright-text {
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #a0a4a8;
+    line-height: 23.2px;
+}
+
+@media screen and (max-width:767px) {
+    .lead__txt {
+        font-size: 40px;
+    }
+    .works h4,
+    p {
+        text-align: center;
+    }
+    .works p {
+        font-size: 18px;
+    }
+    .work-header {
+        font-size: 26px;
+        margin-top: 5%;
+    }
+    .works button {
+        margin-left: 40%;
+    }
+    .social {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .lead__txt {
+        font-size: 35px;
+    }
+    .work-header {
+        font-size: 23px;
+        line-height: normal;
+    }
+    .works p {
+        font-size: 18px;
+    }
+    .social {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .lead__txt {
+        font-size: 30px;
+    }
+    .works button {
+        margin-left: 30%;
+    }
+    .works-header {
+        font-size: 20px;
+        line-height: normal;
+    }
+    .works p {
+        font-size: 16px;
+    }
+    .social {
+        font-size: 26px;
+    }
+}

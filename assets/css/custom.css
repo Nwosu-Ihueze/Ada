@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #dc143c;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #dc143c;
+}
+
+.sidenav .closebtn:hover {
+    color: #ffffff;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.myName {
+    text-align: center;
+}
+
+.intro {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1d1c24;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.heading {
+    font-size: 93px;
+    line-height: 80px;
+    color: #1d1c24;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: #dc143c;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.home .imageside {
+    background-image: url(../images/rec.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .content {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .imageside {
+        height: 75vh;
+    }
+    .content {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 375px) {
+    .content {
+        margin-top: 15%;
+    }
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+}
+
+.hello-line {
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    margin: 0 15px 0 0;
+}
+
+.about h4,
+.experience h4,
+.portfolio h4 {
+    color: #1d1c24;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.about h6,
+.i-do h6,
+.experience h6,
+.portfolio h6 {
+    color: #1d1c24;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    line-height: 48px;
+}
+
+.i-do h6 {
+    margin-top: 20px;
+}
+
+.resBut {
+    background: #dc143c;
+    border-color: #dc143c;
+    width: 194px;
+    height: 52px;
+    border-radius: 15px;
+}
+
+.resBut a,
+.resBut a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about-body {
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.about-body p {
+    text-align: center;
+}
+
+.about h3 {
+    color: #dc143c;
+}
+
+.view-folio {
+    background: #dc143c;
+    border-color: #dc143c;
+    width: 164px;
+    height: 52px;
+    border-radius: 15px;
+}
+
+.view-folio a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.portfolio img {
+    border-radius: 10px;
+}
+
+.colored {
+    background: #dc143c;
+    border: 1px solid #dc143c;
+    border-radius: 39px;
+}
+
+.spin>svg {
+    display: block;
+    animation: spin 5s forwards infinite;
+    animation-timing-function: linear;
+    font-size: 1.2em;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contact-lead {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.contact-txt {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.lowered-form {
+    position: absolute;
+    top: 90%;
+    overflow: hidden;
+    width: 70%;
+}
+
+.form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.send-btn {
+    background: #dc143c;
+    color: white;
+    border: 1px solid #dc143c;
+}
+
+.send-btn:hover {
+    background: #dc143c;
+    color: white;
+}
+
+.form__cont {
+    background: #FFFFFF;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.padded {
+    padding: 1rem;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0 0 0.3rem 0.3rem;
+    font-size: 20px;
+}
+
+.social {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.social-icons {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a {
+    color: #a0a4a8;
+}
+
+.social-icons a:hover {
+    color: #DC143C;
+}
+
+.ion-margin {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+footer {
+    margin-top: 10% !important;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+    footer {
+        margin-top: 15%;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 70px;
+    }
+    .contact-lead {
+        font-size: 30px;
+    }
+    footer {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: 70px;
+    }
+    .about h4,
+    .experience h4,
+    .portfolio h4 {
+        text-align: center;
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .about h6,
+    .i-do h6,
+    .experience h6,
+    .portfolio h6 {
+        text-align: center;
+        font-size: 25px;
+        line-height: 43px;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .resBut {
+        margin-left: 35%;
+    }
+    .view-folio {
+        margin-left: 40%;
+        margin-bottom: 5%;
+    }
+    .about-body {
+        margin-bottom: 5%;
+    }
+    .image-card {
+        padding-left: 30%;
+    }
+    .contact-lead {
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact-txt {
+        font-size: 20px;
+    }
+    .lowered-form {
+        position: absolute;
+        margin-top: -2%;
+        padding: .5rem;
+        margin-left: 10%;
+    }
+    footer {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact-lead {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .contact-txt {
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: -8%;
+    }
+    .colored {
+        padding: 1rem;
+        border-radius: 9px;
+    }
+    .lowered-form {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+    .padded {
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .heading {
+        font-size: 50px;
+        line-height: 30px;
+    }
+    .intro {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .about h4,
+    .experience h4,
+    .portfolio h4 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+    .about h3 {
+        text-align: center;
+    }
+    .contact-txt {
+        margin-left: -1%;
+    }
+    .lowered-form {
+        position: absolute;
+        margin-top: 15%;
+        margin-left: -6%;
+    }
+    footer {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 45px;
+        line-height: 48px;
+    }
+    .intro {
+        font-size: 16px;
+        line-height: 15px;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .about h4,
+    .experience h4,
+    .portfolio h4 {
+        font-size: 25px;
+        line-height: 18px;
+    }
+    .about h6,
+    .experience h6,
+    .portfolio h6 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .resBut {
+        margin-left: 25%;
+    }
+    .image-card {
+        padding-left: 25%;
+    }
+    .view-folio {
+        margin-left: 30%;
+    }
+    .lowered-form {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: -8%;
+    }
+    footer {
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heading {
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .about h4,
+    .experience h4,
+    .portfolio h4 {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .about h6,
+    .experience h6,
+    .portfolio h6 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .resBut {
+        margin-left: 20%;
+    }
+    .hello-line {
+        width: 40px;
+        height: 1px;
+    }
+    .image-card {
+        padding-left: 18%;
+    }
+    .view-folio {
+        margin-left: 25%;
+    }
+    .lowered-form {
+        position: absolute;
+        margin-top: 30%;
+        margin-left: -10%;
+    }
+    footer {
+        margin-top: 50%;
+    }
+}
