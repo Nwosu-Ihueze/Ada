@@ -65,6 +65,7 @@ p {
     color: #ffffff;
     display: block;
     transition: 0.3s;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -72,6 +73,7 @@ p {
 
 .sidenav a:hover {
     color: #dc143c;
+    text-decoration: none;
 }
 
 

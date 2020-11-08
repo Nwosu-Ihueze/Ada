@@ -69,6 +69,7 @@ p {
 
 .sidenav a:hover {
     color: #dc143c;
+    text-decoration: none;
 }
 
 
@@ -357,18 +358,8 @@ span {
     margin-right: 16px;
 }
 
-footer {
-    margin-top: 10% !important;
-}
-
 
 /* Media queries */
-
-@media (max-width: 1024px) {
-    footer {
-        margin-top: 15%;
-    }
-}
 
 @media (min-width: 768px) {
     .heading {
@@ -376,9 +367,6 @@ footer {
     }
     .contact-lead {
         font-size: 30px;
-    }
-    footer {
-        margin-top: 30%;
     }
 }
 
@@ -431,9 +419,6 @@ footer {
         padding: .5rem;
         margin-left: 10%;
     }
-    footer {
-        margin-top: 30%;
-    }
 }
 
 @media screen and (max-width: 650px) {
@@ -484,13 +469,13 @@ footer {
     .contact-txt {
         margin-left: -1%;
     }
+    .reform {
+        height: 350px;
+    }
     .lowered-form {
         position: absolute;
         margin-top: 15%;
         margin-left: -6%;
-    }
-    footer {
-        margin-top: 40%;
     }
 }
 
@@ -538,9 +523,6 @@ footer {
         margin-top: 25%;
         margin-left: -8%;
     }
-    footer {
-        margin-top: 45%;
-    }
 }
 
 @media screen and (max-width: 375px) {
@@ -578,8 +560,5 @@ footer {
         position: absolute;
         margin-top: 30%;
         margin-left: -10%;
-    }
-    footer {
-        margin-top: 50%;
     }
 }
