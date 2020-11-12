@@ -143,7 +143,7 @@ span {
 
 @media (max-width: 767px) {
     .content {
-        margin-top: 10%;
+        margin-top: 15%;
     }
 }
 
@@ -152,13 +152,13 @@ span {
         height: 75vh;
     }
     .content {
-        margin-top: 10%;
+        margin-top: 15%;
     }
 }
 
 @media (max-width: 375px) {
     .content {
-        margin-top: 15%;
+        margin-top: 20%;
     }
 }
 
@@ -237,10 +237,19 @@ span {
     border-radius: 15px;
 }
 
-.view-folio a {
+.view-folio a,
+.view-folio a:hover {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
+}
+
+.about,
+.experience,
+.portfolio,
+.reform {
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 
 .portfolio img {
@@ -267,6 +276,10 @@ span {
     to {
         transform: rotate(360deg);
     }
+}
+
+.reform {
+    height: 600px;
 }
 
 .contact-lead {
