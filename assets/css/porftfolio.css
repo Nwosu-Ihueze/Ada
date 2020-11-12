@@ -206,6 +206,16 @@ p {
     line-height: 23.2px;
 }
 
+.copyright-text a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.copyright-text a:hover {
+    color: #dc143c;
+    text-decoration: none;
+}
+
 @media screen and (max-width:767px) {
     .lead__txt {
         font-size: 40px;
